@@ -10,6 +10,15 @@ eventHub.addEventListener("rideTicketPurchased", customEvent => {
      `
 })
 
+eventHub.addEventListener("fullPackageTicketPurchased", customEvent => {
+       
+    contentTarget.innerHTML += `
+     <div class="person bigSpender">
+     </div> 
+     `
+     
+
+})
 
 
 
