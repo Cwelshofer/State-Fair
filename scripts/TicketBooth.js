@@ -1,6 +1,7 @@
 const contentTarget = document.querySelector(".entry")
 const eventHub = document.querySelector("#state-fair")
 
+
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "rideTicket") {
         const rideEvent = new CustomEvent("rideTicketPurchased")
@@ -43,6 +44,7 @@ eventHub.addEventListener("click", fullPackageEvent => {
 }
 )
 
+
 export const TicketBooth = () => {
     contentTarget.innerHTML = `
         <div class="ticketBooth">
@@ -53,6 +55,6 @@ export const TicketBooth = () => {
         <button id="fullPackageTicket">Full Package Ticket</button>
         </div>
     `
-    something.innerHTML = `Total tickets purchased: ${yourStateVariable}`
+    
 }
 
